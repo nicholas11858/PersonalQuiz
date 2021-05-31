@@ -8,10 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    let question = [Question.getQuestion()]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        for question in question {
+            print(question)
+        }
     }
 
 
