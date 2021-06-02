@@ -80,7 +80,6 @@
                     <navigationItem key="navigationItem" id="jmL-5U-qHy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="Biz-Tb-Ee3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="138.46153846153845" y="93.838862559241704"/>
         </scene>
@@ -317,7 +316,7 @@
                     <navigationItem key="navigationItem" title="Результаты" id="EoD-QH-wV0">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="rT6-U1-Efz">
                             <connections>
-                                <segue destination="Biz-Tb-Ee3" kind="unwind" unwindAction="unwindSegieWithSegue:" id="J8b-TW-guJ"/>
+                                <segue destination="Z85-DL-RCv" kind="unwind" unwindAction="unwindSegueWithSegue:" id="AEa-Ea-AU3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -327,6 +326,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BFh-fB-Dsa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Z85-DL-RCv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2432" y="94"/>
         </scene>
