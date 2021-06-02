@@ -1,43 +1,51 @@
 //
 //  Question.swift
-//  PersonalQuiz
+//  Personal Quiz
 //
-//  Created by user192060 on 5/28/21.
+//  Created by Alexey Efimov on 20/06/2019.
+//  Copyright © 2019 Alexey Efimov. All rights reserved.
 //
-
-// There isn't import of UIKit.
 
 struct Question {
-    let title: String
-    let type: ResponseType
-    let answers: [Answer]
+    var text: String
+    var type: ResponseType
+    var answers: [Answer]
+}
+
+extension Question {
     
-   static func getQuestion() -> [Question] {
-    [
-        Question(
-        title: "Who are you?",
-        type: .single,
-        answers: [Answer(title: "", type: .cat)])
-    ]
+    static func getQuestions() -> [Question] {
+        return [
+            Question(
+                text: "Какую пищу предпочитаете?",
+                type: .single,
+                answers: [
+                    Answer(text: "Стейк", type: .dog),
+                    Answer(text: "Рыба", type: .cat),
+                    Answer(text: "Морковь", type: .rabbit),
+                    Answer(text: "Кукуруза", type: .turtle)
+                ]
+            ),
+            Question(
+                text: "Что вам нравиться больше?",
+                type: .multiple,
+                answers: [
+                    Answer(text: "Плавать", type: .turtle),
+                    Answer(text: "Спать", type: .cat),
+                    Answer(text: "Обниматься", type: .rabbit),
+                    Answer(text: "Есть", type: .dog)
+                ]
+            ),
+            Question(
+                text: "Любите ли вы поездки на машине?",
+                type: .ranged,
+                answers: [
+                    Answer(text: "Ненавижу", type: .cat),
+                    Answer(text: "Нервничаю", type: .rabbit),
+                    Answer(text: "Не замечаю", type: .turtle),
+                    Answer(text: "Обожаю", type: .dog)
+                ]
+            ),
+        ]
     }
 }
-
-enum ResponseType {
-    case single
-    case multiple
-    case ranged
-}
-
-enum AnimalType: Character {
-    case dog = "🐶"
-    case cat = "🐱"
-    case rabit = "🐰"
-    case tartile = "🐢"
-}
-
-struct Answer {
-    let title: String
-    let type: AnimalType
-}
-
-

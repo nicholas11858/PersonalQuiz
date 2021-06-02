@@ -78,7 +78,7 @@
 		CC3BADDD2660E0A9004937FE /* PersonalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				CCF50C452667F364005927F6 /* Model */,
+				CCF50C462667F440005927F6 /* Models */,
 				CCF50C3F2667F044005927F6 /* Resources */,
 				9541534226657830004D504F /* SupportingFiles */,
 				CC3BADF52660E520004937FE /* Storyboards */,
@@ -114,7 +114,7 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		CCF50C452667F364005927F6 /* Model */ = {
+		CCF50C462667F440005927F6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				9541532826656B5E004D504F /* AnimalType.swift */,
@@ -122,7 +122,7 @@
 				CCF50C3C2667EFED005927F6 /* Question.swift */,
 				9541532626656B5E004D504F /* ResponseType.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
