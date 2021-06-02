@@ -47,8 +47,8 @@ class QuestionsViewController: UIViewController {
         guard let currentIndex = singleButtons.firstIndex(of: sender)
         else { return }
         let currentAnswer = currentAnswers[currentIndex]
-        print(currentAnswer)
         answerChosen.append(currentAnswer)
+        
         nextQuestion()
     }
     

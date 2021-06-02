@@ -23,13 +23,11 @@ class ResultViewController: UIViewController {
         navigationItem.setHidesBackButton(true, animated: false)
         
         identifyAnimal(answers: answers)
-        
     }
     // MARK: - Private Methods
     private func identifyAnimal(answers: [Answer]) {
         for item in answers {
             countsOfAnimals[item.type] = (countsOfAnimals[item.type] ?? 0) + 1
-            print(countsOfAnimals)
         }
         if let (value, _) = countsOfAnimals.max(by: {$0.1 < $1.1}) {
             yourAnimal = value

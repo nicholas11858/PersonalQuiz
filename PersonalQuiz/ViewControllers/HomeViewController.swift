@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
         vc.questions = questions
     }
     // MARK: - IB Actions
-    @IBAction func unwindSegie(segue: UIStoryboardSegue) {
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
         
     }
 }
