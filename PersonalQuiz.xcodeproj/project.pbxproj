@@ -18,7 +18,7 @@
 		CC3BADE82660E0AA004937FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC3BADE72660E0AA004937FE /* Assets.xcassets */; };
 		CC3BADEB2660E0AA004937FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3BADE92660E0AA004937FE /* LaunchScreen.storyboard */; };
 		CCE096E22666222C00C2FE7D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE096E12666222C00C2FE7D /* HomeViewController.swift */; };
-		CCE096E52666228C00C2FE7D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE096E42666228C00C2FE7D /* Question.swift */; };
+		CCF50C412667F30F005927F6 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF50C3C2667EFED005927F6 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		CC3BADEA2660E0AA004937FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC3BADEC2660E0AA004937FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCE096E12666222C00C2FE7D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		CCE096E42666228C00C2FE7D /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = "../../../../Downloads/2.20 2/Lesson5/Personal Quiz/Personal Quiz/Model/Question.swift"; sourceTree = "<group>"; };
+		CCF50C3C2667EFED005927F6 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,24 +78,13 @@
 		CC3BADDD2660E0A9004937FE /* PersonalQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				CCF50C452667F364005927F6 /* Model */,
+				CCF50C3F2667F044005927F6 /* Resources */,
 				9541534226657830004D504F /* SupportingFiles */,
-				CC3BADF62660E539004937FE /* Resources */,
 				CC3BADF52660E520004937FE /* Storyboards */,
 				CC3BADF42660E4FA004937FE /* ViewControllers */,
-				CC3BADF32660E4BE004937FE /* Models */,
 			);
 			path = PersonalQuiz;
-			sourceTree = "<group>";
-		};
-		CC3BADF32660E4BE004937FE /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				9541532826656B5E004D504F /* AnimalType.swift */,
-				9541532726656B5E004D504F /* Answer.swift */,
-				CCE096E42666228C00C2FE7D /* Question.swift */,
-				9541532626656B5E004D504F /* ResponseType.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		CC3BADF42660E4FA004937FE /* ViewControllers */ = {
@@ -117,12 +106,23 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		CC3BADF62660E539004937FE /* Resources */ = {
+		CCF50C3F2667F044005927F6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				CC3BADE72660E0AA004937FE /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CCF50C452667F364005927F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9541532826656B5E004D504F /* AnimalType.swift */,
+				9541532726656B5E004D504F /* Answer.swift */,
+				CCF50C3C2667EFED005927F6 /* Question.swift */,
+				9541532626656B5E004D504F /* ResponseType.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,8 +198,8 @@
 				CC3BADDF2660E0A9004937FE /* AppDelegate.swift in Sources */,
 				9541532B26656B5E004D504F /* Answer.swift in Sources */,
 				9541533D26657427004D504F /* ResultViewController.swift in Sources */,
+				CCF50C412667F30F005927F6 /* Question.swift in Sources */,
 				9541532A26656B5E004D504F /* ResponseType.swift in Sources */,
-				CCE096E52666228C00C2FE7D /* Question.swift in Sources */,
 				CCE096E22666222C00C2FE7D /* HomeViewController.swift in Sources */,
 				9541533A2665741A004D504F /* QuestionsViewController.swift in Sources */,
 				CC3BADE12660E0A9004937FE /* SceneDelegate.swift in Sources */,
