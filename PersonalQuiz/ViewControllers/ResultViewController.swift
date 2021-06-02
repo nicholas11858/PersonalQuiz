@@ -25,10 +25,6 @@ class ResultViewController: UIViewController {
         identifyAnimal(answers: answers)
         
     }
-    // MARK: - IB Actions
-    @IBAction func tappedDoneBarButton(_ sender: UIBarButtonItem) {
-        
-    }
     // MARK: - Private Methods
     private func identifyAnimal(answers: [Answer]) {
         for item in answers {

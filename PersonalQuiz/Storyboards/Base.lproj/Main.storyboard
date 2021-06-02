@@ -317,7 +317,6 @@
                     <navigationItem key="navigationItem" title="Результаты" id="EoD-QH-wV0">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="rT6-U1-Efz">
                             <connections>
-                                <action selector="tappedDoneBarButton:" destination="mAo-Hp-tdM" id="7Xn-CC-AeD"/>
                                 <segue destination="Biz-Tb-Ee3" kind="unwind" unwindAction="unwindSegieWithSegue:" id="J8b-TW-guJ"/>
                             </connections>
                         </barButtonItem>
